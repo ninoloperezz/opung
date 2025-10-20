@@ -1,0 +1,74 @@
+body {
+    background-color: gold;
+    font-family: 'Comic Sans MS', sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: red;
+  }
+
+  a {
+    color: red;
+    text-decoration: underline;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    margin-top: 40px;
+    gap: 50px;
+  }
+
+  .left {
+    text-align: center;
+  }
+
+  .image-placeholder {
+    width: 280px;
+    height: 300px;
+    background-color: lightgray;
+    border-radius: 30px;
+    margin-top: 10px;
+  }
+
+  .right {
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .button-container {
+    margin-top: 60px;
+  }
+
+  .order-button {
+    background-color: red;
+    color: gold;
+    border: none;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 40px;
+    cursor: pointer;
+    float: right;
+  }
+
+  .order-button:hover {
+    opacity: 0.9;
+  }
+
+  input {
+    background-color: transparent;
+    border:none;
+    border-bottom: solid red;
+  }

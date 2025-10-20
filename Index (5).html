@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="style (6).css">
+<div class="keranjang">
+    <div class="header">
+      <h2>Keranjang</h2>
+      <a href="Index (4).html" class="kembali">kembali</a>
+    </div>
+  
+    
+    <div class="item-keranjang">
+      <input type="checkbox" class="pilih-item">
+  
+      <div class="preview">
+        <img src="b/2132655.png" alt="Produk" width="80" height="80">
+      </div>
+  
+      <div class="info">
+        <p class="nama-produk">TIP Kurir dan Penjaga</p>
+        <p>Jumlah: <span class="jumlah">1</span></p>
+        <p>Harga Satuan: Rp<span class="harga-satuan">2.000</span></p>
+      </div>
+  
+      <div class="harga-total-item">
+        Rp<span class="total-item">2.000</span>
+      </div>
+    </div>
+  
+    <div class="footer-keranjang">
+      <div class="total-semua">
+        <strong>Harga Total (checklis):</strong> Rp<span id="total-checklist">0</span>
+      </div>
+      <button class="checkout" onclick="window.location.href='Index (6).html'">CHECKOUT</button>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const checkboxes = document.querySelectorAll('.pilih-item');
+      const totalDisplay = document.getElementById('total-checklist');
+    
+      function updateTotal() {
+        let total = 0;
+        checkboxes.forEach(box => {
+          if (box.checked) {
+            const itemDiv = box.closest('.item-keranjang');
+            const totalPerItem = itemDiv.querySelector('.total-item').textContent.replace(/\./g, '');
+            total += parseInt(totalPerItem);
+          }
+        });
+    
+        totalDisplay.textContent = total.toLocaleString('id-ID');
+      }
+    
+      checkboxes.forEach(box => {
+        box.addEventListener('change', updateTotal);
+      });
+    
+      updateTotal(); 
+    });
+    </script>
+    
+    

@@ -1,0 +1,30 @@
+body {
+    background-color: gold;
+    font-family: Georgia, serif;
+    color: red;
+    margin: 0;
+    padding: 40px;
+    position: relative;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-size: 50px;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .bottom-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  a {
+    color: red;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 50px;
+  }

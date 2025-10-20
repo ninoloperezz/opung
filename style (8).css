@@ -1,0 +1,40 @@
+body {
+    background-color: #ffD900;
+    color: red;
+    font-size:35px ;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+.p{
+    color:red
+}
+a {
+    color:red
+}
+
+
+.c{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    overflow:hidden;
+}
+
+
+.a {
+    color:red
+}
+
+.input {
+    border-radius:8px;
+    background-color:red;
+}
+.container-1 {
+    display: flex;
+}
+.kembali{
+    text-align:left;
+}
+.pemesanan{
+    text-align: center;
+}

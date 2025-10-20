@@ -1,0 +1,141 @@
+body {
+    background-color: #ffD900;
+    color: red;
+    text-align:center;
+    font-size:45px;
+    font-family: 'Comic Sans MS', sans-serif;
+
+}
+
+p {
+    color:red
+}
+
+button {
+    background-color: red;
+    color:#ffD900;
+    width: 350px;
+    height: 40px;
+    border:none;
+    border-radius:8px;
+}
+
+.header {
+    display:flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    justify-content: center;
+    overflow:hidden;
+}
+
+.header div {
+    width:6vw;
+    height:12vh;
+    background-color:red;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.header span {
+    width:6vw;
+    height:12vh;
+    background-color:#ffD900;
+    border:solid red;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.footer {
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    overflow:hidden;
+    position: fixed;
+    bottom:0;
+    left:0;
+
+}
+
+.footer div {
+    width:6vw;
+    height:12vh;
+    background-color:rgb(9, 68, 245);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.footer span {
+    width:6vw;
+    height:12vh;
+    background-color:white;
+    border:solid 3px rgb(9, 68, 245);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.box {
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color:red
+}
+
+.box input {
+    background:transparent;
+    border:none;
+    border-bottom:2px solid red;
+    outline:none;
+    color:red;
+    font-size: 30px;
+    size:45px;
+}
+
+input::placeholder {
+    color:red;
+}
+
+h1 {
+    text-align: center;
+    justify-content: center;
+}
+h2 {
+    text-align: center;
+    justify-content: center;
+}
+
+img {
+    border-radius: 100px;
+    width: 180px;
+    height: 180px;
+}
+
+.nav {
+    background-color:red;
+    overflow: hidden;
+}
+
+.nav a{
+    float: left;
+    color:black;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+
+.nav a:hover {
+    background-color: red;
+    color:white
+}
+
+.nav a.active {
+    background-color: black;
+    color:black;
+}
